@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome, <%= user.username %>!</h1>
+    <h2> this is the homepage
+    </h2>
+    <a href="/logout">Logout</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <style>
+        /* Basic CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-content {
+            font-size: 16px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card-container {
+            flex: 1 1 300px; /* Adjust width as needed */
+        }
+
+        @media screen and (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .card-container {
+                flex: 1 1 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome, <%= user.username %>!</h1>
+            <a href="/quiz">quiz</a>
+            <a href="/logout">Logout</a>
+        </div>
+        <div class="flex-container">
+            <div class="card-container">
+                <div class="card">
+                    <h2 class="card-title">Courses</h2>
+                    <p class="card-content">You are enrolled in the following courses:</p>
+                    <ul class="card-content">
+                        <li>Mathematics</li>
+                        <li>Science</li>
+                        <li>History</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h2 class="card-title">Grades</h2>
+                    <p class="card-content">Your recent grades:</p>
+                    <ul class="card-content">
+                        <li>Mathematics: A</li>
+                        <li>Science: B+</li>
+                        <li>History: A-</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <h2 class="card-title">Upcoming Assignments</h2>
+                    <p class="card-content">You have the following assignments due soon:</p>
+                    <ul class="card-content">
+                        <li>Mathematics: Problem Set 3</li>
+                        <li>Science: Lab Report</li>
+                        <li>History: Essay on World War II</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
